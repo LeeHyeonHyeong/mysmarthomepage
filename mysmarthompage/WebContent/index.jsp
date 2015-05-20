@@ -26,10 +26,16 @@
 			</td>
 		</tr>
 		<tr>
-			<td style="border:1px solid #808080; width: 30%"></td>
+			<td style="border:1px solid #808080; width: 30%">
+				<a href="part03.do">part 3. 서블릿 문법</a>
+			</td>
+				
 		</tr>
 		<tr>
-			<td style="border:1px solid #808080; width: 30%"></td>
+			<td style="border:1px solid #808080; width: 30%">
+				
+			</td>
+				
 		</tr>
 		<tr>
 			<td style="border:1px solid #808080; width: 30%"></td>

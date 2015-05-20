@@ -10,15 +10,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Part01
+ * Servlet implementation class GoMethod
  */
-@WebServlet("/part01.do")
-public class Part01 extends HttpServlet {
+@WebServlet("/part01/go_method.do")
+public class GoMethod extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/part01/intro.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/part01/method.jsp");
 		dispatcher.forward(request, response);
 	}
 

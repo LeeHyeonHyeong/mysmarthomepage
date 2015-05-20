@@ -54,6 +54,14 @@
 			</li>
 		</u1>
 	</div>
+	<div>
+		<h3>GET 방식과 POST방식의 차이점</h3>
+		<ul>
+			<li>
+				<a href="part01/go_method.do">메소드JPS로 이동</a>
+			</li>
+		</ul>
+	</div>
 </body>
 </html>
 
