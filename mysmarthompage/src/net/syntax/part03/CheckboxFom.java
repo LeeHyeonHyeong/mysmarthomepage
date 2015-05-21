@@ -10,16 +10,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class LoginForm
+ * 체크박스폼 바로가기
  */
-@WebServlet("/part03/login_form.do")
-public class LoginForm extends HttpServlet {
+@WebServlet("/part03/checkbox_form.do")
+public class CheckboxFom extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-	
+       
+   
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/part03/login_form.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/part03/checkbox.jsp");
 		dispatcher.forward(request, response);
 	}
+
+	
 
 }

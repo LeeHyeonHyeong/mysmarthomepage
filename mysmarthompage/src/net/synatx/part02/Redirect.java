@@ -1,4 +1,4 @@
-package net.syntax.part03;
+package net.synatx.part02;
 
 import java.io.IOException;
 
@@ -10,15 +10,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class LoginForm
+ * Servlet implementation class Redirect
  */
-@WebServlet("/part03/login_form.do")
-public class LoginForm extends HttpServlet {
+@WebServlet("/part02/redirect.do")
+public class Redirect extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/part03/login_form.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/part02/redirect.jsp");
 		dispatcher.forward(request, response);
 	}
 
