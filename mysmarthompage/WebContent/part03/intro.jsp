@@ -8,9 +8,15 @@
 </head>
 <body>
 	<div>
-		<h3>로그인 폼 샘플</h3>
+		<h3>로그인 폼 샘플(ID와 숫자입력)</h3>
 		<div>
 			<a href="${pageContext.request.contextPath}/part03/login_form.do">바로가기</a>
+		</div>
+	</div>
+	<div>
+		<h3>로그인 폼 2 샘플(ID와 Passward입력)</h3>
+		<div>
+			<a href="${pageContext.request.contextPath}/part03/login_form2.do">바로가기</a>
 		</div>
 	</div>
 	<div>
