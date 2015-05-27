@@ -33,7 +33,7 @@
 		</tr>
 		<tr>
 			<td style="border:1px solid #808080; width: 30%">
-				
+				<a href="part04.do">part 4. JDBC</a>
 			</td>
 				
 		</tr>

@@ -20,6 +20,19 @@
 		function join() 	{
 			location.href = "join_form.jsp";
 		}
+		function loginCheck() {
+			if(document.frm.userid.value.lenght == 0){
+				alret("아이디를 써주세요.");
+				frm.userid.focus(); 	/* 커서를 인텍스트 칸에 위치시킨다. */
+				return false;
+			}
+			if(document.frm.pwd.value == ""){
+				alret("비밀번호를 반드시 입력해야 합니다"); /* 커서를 인텍스트 칸에 위치시킨다. */
+				frm.pwd.focus();
+				return false;
+			}
+			return true;
+		}
 	</script>
 </head>
 <body>
@@ -42,11 +55,11 @@
 		<h1>로그인</h1>
 		<img src="../images/naver_logo.gif" alt="" />
 		<div style="margin-top: 20px">
-			<form
+			<form name="frm"
 				action="${pageContext.request.contextPath}/part03/login_demo2.do">
 				<label for="userid">아이디 : </label> <input type="text" name="id"
 					id="id" /></br> <label for="passward">암호 : </label> <input type="passward"
-					name="pwd" id="pwd" /></br> <input type="submit" value="로그인" />
+					name="pwd" id="pwd" /></br> <input type="submit" value="로그인" onclick="return loginCheck()" />
 			</form>
 
 			<div>
