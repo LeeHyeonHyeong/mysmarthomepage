@@ -1,4 +1,4 @@
-package net.syntax.part03;
+package net.syntax.part05;
 
 import java.io.IOException;
 
@@ -10,15 +10,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class LogoutDemo
+ * Servlet implementation class LoginForm2
  */
-@WebServlet("/part03/logout_demo.do")
-public class LogoutDemo extends HttpServlet {
+@WebServlet("/part05/login_form.do")
+public class LoginForm extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/part03/logout.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/part05/login_form.jsp");
 		dispatcher.forward(request, response);
 	}
 

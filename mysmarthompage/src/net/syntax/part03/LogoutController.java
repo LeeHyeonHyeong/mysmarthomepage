@@ -1,4 +1,4 @@
-package net.syntax.part04;
+package net.syntax.part03;
 
 import java.io.IOException;
 
@@ -9,21 +9,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.catalina.connector.Request;
-
 /**
- * Servlet implementation class MemberList
+ * Servlet implementation class LogoutDemo
  */
-@WebServlet("/part04/memberlist.do")
-public class MemberList extends HttpServlet {
+@WebServlet("/part03/logout_demo.do")
+public class LogoutController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/part04/memberlist.jsp");
-		dispatcher.forward(request, response);
-	}
 
 	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/part03/logout.jsp");
+		dispatcher.forward(request, response);
+	}
 
 }

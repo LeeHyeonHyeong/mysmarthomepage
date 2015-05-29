@@ -1,4 +1,4 @@
-package net.syntax.part04;
+package com.mysmarthomepage.login;
 
 import java.io.IOException;
 
@@ -9,21 +9,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.catalina.connector.Request;
-
 /**
- * Servlet implementation class MemberList
+ * Servlet implementation class LoginForm2
  */
-@WebServlet("/part04/memberlist.do")
-public class MemberList extends HttpServlet {
+@WebServlet("/member/login_form.do")
+public class LoginFormController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/part04/memberlist.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/views/login_form.jsp");
 		dispatcher.forward(request, response);
 	}
-
-	
 
 }

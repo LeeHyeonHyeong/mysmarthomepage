@@ -18,7 +18,7 @@ public class Template extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/part02/template.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/views/template.jsp");
 		dispatcher.forward(request, response);
 	}
 

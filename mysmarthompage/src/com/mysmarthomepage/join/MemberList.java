@@ -1,4 +1,4 @@
-package net.syntax.part04;
+package com.mysmarthomepage.join;
 
 import java.io.IOException;
 
@@ -14,13 +14,13 @@ import org.apache.catalina.connector.Request;
 /**
  * Servlet implementation class MemberList
  */
-@WebServlet("/part04/memberlist.do")
+@WebServlet("/member/list")
 public class MemberList extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/part04/memberlist.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/views/member.jsp");
 		dispatcher.forward(request, response);
 	}
 

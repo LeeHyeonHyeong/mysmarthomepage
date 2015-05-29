@@ -1,6 +1,6 @@
 package net.syntax.part04;
 
-public class MemberVo {
+public class MemberBean {
 	private String id;
 	private String pwd; //패스워드
 	private String name;

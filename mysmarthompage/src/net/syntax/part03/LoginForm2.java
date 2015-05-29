@@ -12,13 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class LoginForm2
  */
-@WebServlet("/part03/login_form2.do")
+@WebServlet("/part03/login_form222.do")
 public class LoginForm2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/part03/login_form2.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/part03/login_form.jsp");
 		dispatcher.forward(request, response);
 	}
 
