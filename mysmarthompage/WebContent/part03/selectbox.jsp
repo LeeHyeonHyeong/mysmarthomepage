@@ -22,9 +22,9 @@
 				<option value="">선택하세요</option>
 				<option value="아카기">아카기</option>
 				<option value="요크타운">요크타운</option>
-				<option value="아크로열">아크로열</option>
-				<option value="크라프 체펄린">크라프 체펄린</option>
-				<option value="기타">기타</option>
+				<option value="호르넷">호르넷</option>
+				<option value="카가">카가</option>
+				<option value="엔터프라이즈">엔터프라이즈</option>
 
 			</select>
 		</span>
