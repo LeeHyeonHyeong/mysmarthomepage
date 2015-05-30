@@ -16,13 +16,13 @@ import com.sun.xml.internal.bind.v2.runtime.unmarshaller.Discarder;
 /**
  * Servlet implementation class Part04
  */
-@WebServlet("/prototyp.do")
+@WebServlet("/prototype.do")
 public class Part05 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/part04/intro.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/views/template.jsp");
 		dispatcher.forward(request, response);
 	}
 
