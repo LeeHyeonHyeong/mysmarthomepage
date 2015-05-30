@@ -18,7 +18,7 @@
 			location.href = "";
 		}
 		function join() 	{
-			location.href = "${pageContext.request.contextPath}/member/join_form.jsp";
+			location.href = "join_form.jsp";
 		}
 		function loginCheck() {
 			if(document.frm.userid.value.lenght == 0){
