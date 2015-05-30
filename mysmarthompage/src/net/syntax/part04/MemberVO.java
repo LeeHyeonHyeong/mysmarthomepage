@@ -2,11 +2,11 @@ package net.syntax.part04;
 
 public class MemberBean {
 	private String id;
-	private String pwd; //ÆĞ½º¿öµå
+	private String pwd; //Ã†ÃÂ½ÂºÂ¿Ã¶ÂµÃ¥
 	private String name;
 	private String age;
 	private String gender;
-	// getter setter ´ÜÃàÅ°
+	// getter setter Â´ÃœÃƒÃ Ã…Â°
 	// alt + shift + s
 	public String getId() {
 		return id;
