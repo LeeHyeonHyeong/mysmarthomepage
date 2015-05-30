@@ -13,7 +13,7 @@
 	<%-- <%
 		MemberVo member = new MemberVo();
 	%> --%>
-	<jsp:useBean class="net.syntax.part04.MemberBean" id="member" scope="page"></jsp:useBean>
+	<jsp:useBean class="net.syntax.part04.MemberVO" id="member" scope="page"/>
 	
 	이 름 : <%=member.getName() %>
 	아이디: <%=member.getId() %>
