@@ -12,13 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class LogoutDemo
  */
-@WebServlet("/part03/logout_demo.do")
+@WebServlet("/part03/logout.do")
 public class LogoutController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/part03/logout.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/part03/login_form2.jsp");
 		dispatcher.forward(request, response);
 	}
 
