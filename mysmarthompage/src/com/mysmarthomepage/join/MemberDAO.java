@@ -10,15 +10,17 @@ import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 public class MemberDAO {
-	Connection conn;	//ÀÚ¹Ù¿¡¼­ ¸â¹öÇÊµåÀÇ ¸â¹öº¯¼ö´Â ÃÊ±âÈ­
-	Statement stmt;		//ÇÏÁö¾Ê¾Æµµ µÈ´Ù, ´Ü Áö¿ªº¯¼ö¶ó¸é ÃÊ±âÈ­ÇØ¾ßÇÑ´Ù.
+	Connection conn;	//ìë°”ì—ì„œ ë©¤ë²„í•„ë“œì˜ ë©¤ë²„ë³€ìˆ˜ëŠ” ì´ˆê¸°í™”
+	Statement stmt;		//í•˜ì§€ì•Šì•„ë„ ëœë‹¤, ë‹¨ ì§€ì—­ë³€ìˆ˜ë¼ë©´ ì´ˆê¸°í™”í•´ì•¼í•œë‹¤.
 	ResultSet rs;
 	PreparedStatement pstmt;
-	//»ı¼ºÀÚ¸¦ ½Ì±ÛÅæ ÆĞÅÏÀ¸·Î »ı¼ºÇÑ´Ù.
-	//private À¸·Î »ı¼ºÀÚ¸¦ ¹Ù²Ù¸é
-	//new MemberDAO() °¡ ÀÛµ¿ÇÏÁö ¾Ê´Â´Ù.
-	//ÀÌÀ¯´Â ÀÎ½ºÅÏ½º¸¦ ÇÏ³ª¸¸ ¸¸µé±â À§ÇÔÀÌ´Ù.
-	private MemberDAO() {}
+	//ìƒì„±ìë¥¼ ì‹±ê¸€í†¤ íŒ¨í„´ìœ¼ë¡œ ìƒì„±í•œë‹¤.
+	//private ìœ¼ë¡œ ìƒì„±ìë¥¼ ë°”ê¾¸ë©´
+	//new MemberDAO() ê°€ ì‘ë™í•˜ì§€ ì•ŠëŠ”ë‹¤.
+	//ì´ìœ ëŠ” ì¸ìŠ¤í„´ìŠ¤ë¥¼ í•˜ë‚˜ë§Œ ë§Œë“¤ê¸° ìœ„í•¨ì´ë‹¤.
+	private MemberDAO() {
+		conn = DBmanager.getConnection();
+	}
 	private static MemberDAO instance = new MemberDAO();
 	public static MemberDAO getInstance(){
 		return instance;
@@ -45,7 +47,7 @@ public class MemberDAO {
 			num = pstmt.executeUpdate();
 		}catch(Exception ex){
 			ex.printStackTrace();
-			System.out.println("memberDAO¿¡¼­ ¿¡·¯°¡ ¹ß»ı!");
+			System.out.println("memberDAOì—ì„œ ì—ëŸ¬ê°€ ë°œìƒ!");
 		}
 		return num;
 	}
