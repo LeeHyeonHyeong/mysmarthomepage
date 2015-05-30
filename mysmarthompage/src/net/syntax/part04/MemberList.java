@@ -14,13 +14,13 @@ import org.apache.catalina.connector.Request;
 /**
  * Servlet implementation class MemberList
  */
-@WebServlet("/part04/memberlist.do")
+@WebServlet("/part04/member_list.do")
 public class MemberList extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/part04/memberlist.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/part04/member.jsp");
 		dispatcher.forward(request, response);
 	}
 
