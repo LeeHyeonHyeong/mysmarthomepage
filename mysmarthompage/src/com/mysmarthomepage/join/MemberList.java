@@ -14,7 +14,7 @@ import org.apache.catalina.connector.Request;
 /**
  * Servlet implementation class MemberList
  */
-@WebServlet("/member/list")
+@WebServlet("/member/list.do")
 public class MemberList extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
