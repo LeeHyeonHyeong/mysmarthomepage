@@ -1,4 +1,4 @@
-<!-- Å×ÀÌºí»ı¼º½Ã -->
+<!-- í…Œì´ë¸”ìƒì„±ì‹œ -->
 create table member(
 	id varchar2(20),
 	pwd varchar2(20),
@@ -7,28 +7,28 @@ create table member(
 	gender varchar2(5),
 	primary key(id)
 );
-<!-- Ä¿¹Ô ¸í·É¾î -->
+<!-- ì»¤ë°‹ ëª…ë ¹ì–´ -->
 commit;
 
 select * from  member;  
 
 insert into member(id,pwd,name,age,gender)
-values('hong','1234','È«±æµ¿','20','MAN');
+values('hong','1234','í™ê¸¸ë™','20','MAN');
 
 insert into member(id,pwd,name,age,gender)
-values('kim,'1234','±è±æµ¿','20','MAN');
+values('kim,'1234','ê¹€ê¸¸ë™','20','MAN');
 
-<!-- È¸¿øÅ»Åğ½Ã  -->
+<!-- íšŒì›íƒˆí‡´ì‹œ  -->
 
 deleta from member
-where id = ''; SQL    <!-- ¹®ÀÚ¿­ Ç¥½ÃÇÒ‹š ½Ì±ÛÄõÅÍ »ç¿ë -->
+where id = '';    <!-- SQL ë¬¸ìì—´ í‘œì‹œí• Â‹Âš ì‹±ê¸€ì¿¼í„° ì‚¬ìš© -->
 
-<!-- ·Î±×ÀÎ È¸¿øÁ¶È¸ -->
+<!-- ë¡œê·¸ì¸ íšŒì›ì¡°íšŒ -->
 
 select pwd from member
 where id = '';
 
-<!-- Å×ÀÌºíÀÇ ÄÃ·³À» Á¶È¸ÇÒ‹š -->
+<!-- í…Œì´ë¸”ì˜ ì»¬ëŸ¼ì„ ì¡°íšŒí• Â‹Âš -->
 desc member;
 
 
