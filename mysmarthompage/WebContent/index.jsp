@@ -39,7 +39,7 @@
 		</tr>
 		<tr>
 			<td style="border:1px solid #808080; width: 30%">
-				<a href="prototye.do">MVC 모델 바로가기</a>
+				<a href="prototype.do">MVC 모델 바로가기</a>
 			</td>
 		</tr>
 		<tr>
