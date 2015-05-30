@@ -17,7 +17,7 @@
 	<div>
 		<h3>멤버 리스트..</h3>
 		<div>
-			<a href="${pageContext.request.contextPath}/part04/member.do">MEMBER</a>
+			<a href="${pageContext.request.contextPath}/part04/member_list.do">회원목록</a>
 		</div>
 	</div>
 </body>
