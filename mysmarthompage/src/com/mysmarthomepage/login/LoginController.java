@@ -23,13 +23,12 @@ public class LoginController extends HttpServlet {
 		response.setContentType("text/html;charset=UTF-8");
 		String id = request.getParameter("id");
 		String pwd = request.getParameter("pwd");
-		System.out.println("ÄÁÆ®·Ñ·¯¿¡¼­ ¹İµç ID"+ id);
-		
-		LoginServiceImpl.getInstance().login(id);
+		System.out.println("ì»¨íŠ¸ë¡¤ëŸ¬ì—ì„œ ë°˜ë“  ID"+ id);
+		String pass = LoginServiceImpl.getInstance().login(id);
 		if(pwd.equals(pass)){
-			System.out.println("·Î±×ÀÎ¼º°ø");
+			System.out.println("ë¡œê·¸ì¸ì„±ê³µ");
 		}else{
-			System.out.println("·Î±×ÀÎ½ÇÆĞ");
+			System.out.println("ë¡œê·¸ì¸ì‹¤íŒ¨");
 		}
 		
 	}
