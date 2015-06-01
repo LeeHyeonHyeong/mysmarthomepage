@@ -9,7 +9,7 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
-import net.syntax.part04.MemberBean;
+import net.syntax.part04.MemberVO;
 
 import com.mysmarthomepage.join.RemoveDAO;
 import com.mysmarthomepage.util.DBmanager;

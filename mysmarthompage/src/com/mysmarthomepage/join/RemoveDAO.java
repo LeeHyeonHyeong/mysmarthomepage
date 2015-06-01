@@ -32,18 +32,24 @@ public class RemoveDAO {
 		conn = ds.getConnection();
 		return conn;	
 	}
-	public int removeMember(MemberBean bean) {
+	public void removeMember(String id) {
 		int num =0;
-		String pass = "";
-		String sql ="deleta from member where id = ?";
+		String sql ="deleta from member where id = '"+id+"'";
 		try{
-			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, bean.getId());
-			pass = pstmt.executeQuery();
+			stmt = conn.createStatement();
+			rs = pstmt.executeQuery(sql);
+		
 		}catch(Exception ex) {
 			ex.printStackTrace();
 			System.out.println("RemoveDAO에서 에러발생");
 		}
-		return num;
+		/*
+		 * 위에 부분은 완성된 ~DAO에서 같히 사용해도 무방하므로
+		 * 붙여넣되.. 클래스명만 일치시킨다
+		 * 다음으로 아래는 현재 클래스에 맞는 메소드를 생성해야한다 ...
+		 */	
+	}
+	public void updateMember(String id){
+		String sql = "";
 	}
 }

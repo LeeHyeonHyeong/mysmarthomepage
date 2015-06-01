@@ -6,7 +6,7 @@
 <%@ page import="java.sql.Statement" %>
 <!-- 위 4가지 import 는 DB 내용 출력시 반드시 필요하다. -->
 <%@ page import="net.syntax.part04.MemberDAO" %>
-<%@ page import="net.syntax.part04.MemberBean" %>
+<%@ page import="net.syntax.part04.MemberVO" %>
 <%!  /* 선언부는 첫 방문자에 의해 단 한번만 수행됩니다. */
 	Connection conn = null;
 	Statement stmt = null;

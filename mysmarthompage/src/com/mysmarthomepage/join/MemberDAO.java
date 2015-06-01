@@ -9,15 +9,17 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
+import com.mysmarthomepage.util.DBmanager;
+
 public class MemberDAO {
-	Connection conn;	//자바에서 멤버필드의 멤버변수는 초기화
-	Statement stmt;		//하지않아도 된다, 단 지역변수라면 초기화해야한다.
+	Connection conn;	//�먮컮�먯꽌 硫ㅻ쾭�꾨뱶��硫ㅻ쾭蹂�닔��珥덇린��
+	Statement stmt;		//�섏��딆븘���쒕떎, ��吏�뿭蹂�닔�쇰㈃ 珥덇린�뷀빐�쇳븳��
 	ResultSet rs;
 	PreparedStatement pstmt;
-	//생성자를 싱글톤 패턴으로 생성한다.
-	//private 으로 생성자를 바꾸면
-	//new MemberDAO() 가 작동하지 않는다.
-	//이유는 인스턴스를 하나만 만들기 위함이다.
+	//�앹꽦�먮� �깃����⑦꽩�쇰줈 �앹꽦�쒕떎.
+	//private �쇰줈 �앹꽦�먮� 諛붽씀硫�
+	//new MemberDAO() 媛��묐룞�섏� �딅뒗��
+	//�댁쑀���몄뒪�댁뒪瑜��섎굹留�留떎.
 	private MemberDAO() {
 		conn = DBmanager.getConnection();
 	}

@@ -1,4 +1,4 @@
-package com.smarthomepage.login;
+package com.mysmarthomepage.login;
 
 public class LoginServiceImpl implements LoginService {
 	private LoginServiceImpl() {}

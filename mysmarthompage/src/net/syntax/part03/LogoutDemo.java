@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class LogoutDemo
  */
 @WebServlet("/part03/logout.do")
-public class LogoutController extends HttpServlet {
+public class LogoutDemo extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	

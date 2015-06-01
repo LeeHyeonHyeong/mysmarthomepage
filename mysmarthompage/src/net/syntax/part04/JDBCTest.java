@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.catalina.connector.Request;
 
-/**
+/*
  * Servlet implementation class JDBCTest
  */
 @WebServlet("/part04/jdbc_test.do")

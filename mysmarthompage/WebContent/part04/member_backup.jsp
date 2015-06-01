@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import= "java.sql.Connection" %>
 <%@ page import="net.syntax.part04.MemberDAO" %>
-<%@ page import="net.syntax.part04.MemberBean" %>
+<%@ page import="net.syntax.part04.MemberVO" %>
 <!doctype html>
 <html lang="en">
 <head>
